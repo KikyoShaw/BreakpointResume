@@ -7,22 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Margin="10">
-            <Label Content="URL:"/>
-            <TextBox x:Name="UrlTextBox" Text="https://repo.huya.com/dwbuild/dwinternal/huya-gamelive-pc-audience/branches_net_core_dev_5.25.0.0_20220216/20230704172350-2978-r2066314/channel/HuyaClient.exe"/>
-            <Label Content="存储路径:"/>
-            <TextBox x:Name="SavePathTextBox" Text="E:/shaw/111/Huya.exe"/>
-            <ProgressBar x:Name="DownloadProgressBar" Height="20" Margin="0, 10, 0, 0"/>
-            <TextBlock x:Name="StatusTextBlock" HorizontalAlignment="Center"/>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="DownloadButton" Content="开始下载" Click="DownloadButton_Click" Margin="5"/>
-            <Button x:Name="PauseButton" Content="暂停" Click="PauseButton_Click" Margin="5"/>
-            <Button x:Name="ResumeButton" Content="继续" Click="ResumeButton_Click" Margin="5"/>
-        </StackPanel>
+        <local:UserControl2 />
     </Grid>
 </Window>
